@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 043_V_F
-  m_Shader: {fileID: 4800000, guid: 957f5c944eb497b45a7c8e9f359f3674, type: 3}
+  m_Shader: {fileID: 4800000, guid: 337fa28ae1b4fb64fb6cf501e279bd2a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: bb1b87fa6098f8b4bb8fdf31bb2934ad, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -66,7 +66,9 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Range: 0.15
+    - _Range: -0.31
+    - _ScaleUVX: 1
+    - _ScaleUVY: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
