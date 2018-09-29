@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_MotionVectors
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d5d219e0922649ebad407ab0e56b446, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.715
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5d219e0922649ebad407ab0e56b446, type: 3}
 --- !u!1 &1267929344
