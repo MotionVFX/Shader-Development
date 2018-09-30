@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Test
-  m_Shader: {fileID: 4800000, guid: 36ebecb55660d2d4b914de07c620a868, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5dfc6ef1697522c468150abdbdee33bd, type: 3}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -112,6 +112,7 @@ Material:
     - _DstBlend: 0
     - _EmissionEnabled: 1
     - _Eslider: 2.08
+    - _Extrude: 0.13
     - _FlipbookMode: 0
     - _GlossMapScale: 1
     - _Glossiness: 1
@@ -121,6 +122,7 @@ Material:
     - _Mode: 0
     - _Multiplay: 0.5
     - _OcclusionStrength: 1
+    - _Outline: 1
     - _Parallax: 0.02
     - _ScaleUVX: 10
     - _ScaleUVY: 10
@@ -137,10 +139,11 @@ Material:
     - _slider: 4.77
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmisColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
     - _ShadowColor: {r: 1, g: 0.5187078, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
