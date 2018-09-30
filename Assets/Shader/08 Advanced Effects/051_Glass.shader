@@ -3,8 +3,8 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" { }
-        _BumpT ("Normalmap", 2D) = "white" { }
-        _ScaleUV ("Scale UV X", Range(0, 30)) = 1
+        _BumpMap ("Normalmap", 2D) = "bump" { }
+        _ScaleUV ("Scale UV", Range(0, 30)) = 1
     }
 
     SubShader
@@ -34,8 +34,8 @@
                 float4 vertex : SV_POSITION;
             };
 
-            sampler2D _MainTex, _BumpT, _GrabTexture;
-            float4 _MainTex_ST, _BumpT_ST, _GrabTexture_TexelSize;
+            sampler2D _MainTex, _BumpMap, _GrabTexture;
+            float4 _MainTex_ST, _BumpMap_ST, _GrabTexture_TexelSize;
             float _ScaleUV;
 
             v2f vert(appdata v)
@@ -45,13 +45,13 @@
                 o.uvgrab.xy = (float2(o.vertex.x, - o.vertex.y) + o.vertex.w) * 0.5;
                 o.uvgrab.zw = o.vertex.zw;
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-                o.uvbump = TRANSFORM_TEX(v.uv, _BumpT);
+                o.uvbump = TRANSFORM_TEX(v.uv, _BumpMap);
                 return o;
             }
 
             fixed4 frag(v2f i) : SV_Target
             {
-                half2 bump = UnpackNormal(tex2D(_BumpT, i.uvbump)).rg;
+                half2 bump = UnpackNormal(tex2D(_BumpMap, i.uvbump)).rg;
                 float2 offset = bump * _ScaleUV * _GrabTexture_TexelSize.xy;
                 i.uvgrab.xy = offset * i.uvgrab.z + i.uvgrab.xy;
 

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HelloShader
-  m_Shader: {fileID: 4800000, guid: 337fa28ae1b4fb64fb6cf501e279bd2a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8803b125af3b84a4aaa8a5c850b98294, type: 3}
   m_ShaderKeywords: _SHOWDECAL_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 15580cc94df877b45a4a2b4034d0ebe5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpT:
+        m_Texture: {fileID: 2800000, guid: e0c67f75afd7c954194a48913854425f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
@@ -48,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0e5b512188d28a44ab555383532fef9e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 80174a92db0b9cf4380ef096683f702d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -98,11 +102,13 @@ Material:
     - _Multiplay: 0.5
     - _MySliderValue: 10
     - _OcclusionStrength: 1
+    - _Outline: 0.4
     - _Parallax: 0.02
     - _Range: 0
     - _RimPower: 5.82
-    - _ScaleUVX: 1
-    - _ScaleUVY: 1
+    - _ScaleUV: 30
+    - _ScaleUVX: 10
+    - _ScaleUVY: 10
     - _ShowDecal: 1
     - _SmoothnessTextureChannel: 0
     - _Spec: 0.415
@@ -118,6 +124,7 @@ Material:
     - _AmbientColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.5955882, g: 0.5955882, b: 0.5955882, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
     - _RimColor: {r: 0, g: 0.5034485, b: 1, a: 0}
     - _SpecColor: {r: 0, g: 0.7931037, b: 1, a: 1}
     - _color: {r: 0, g: 0.247, b: 1, a: 1}
