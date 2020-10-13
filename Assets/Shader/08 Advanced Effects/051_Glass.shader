@@ -58,7 +58,7 @@
                 fixed4 col = tex2Dproj(_GrabTexture, UNITY_PROJ_COORD(i.uvgrab));
                 fixed4 tint = tex2D(_MainTex,i.uv);
                 col *= tint;
-                return col;
+                return c;
             }
             ENDCG
         }
