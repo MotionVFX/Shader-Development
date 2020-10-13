@@ -45,8 +45,8 @@
 
         void surf(Input IN, inout SurfaceOutput o)
         {
-            float4 c = tex2D(_MainTex, IN.uv_MainTex);
-            o.Albedo = c * IN.vertColor.rgb;
+            float4 col = tex2D(_MainTex, IN.uv_MainTex);
+            o.Albedo = col * IN.vertColor.rgb;
         }
         ENDCG
     }
